@@ -1,8 +1,14 @@
+# myproject.py
+# A simple Python app example
 
-print("Hello, World!")
-# This is a simple Python script that prints "Hello, World!" to the console. You can run this script in any Python environment to see the output.
-# You can also add more functionality to this script, such as taking user input or performing calculations. For example:
-# Taking user input
-name = input("What is your name? ")
-print("Hello, " + name + "!")
-# Performing calculations
+def greet_user(name):
+    return f"Hello, {name}! Welcome to my Python app."
+
+def main():
+    print("=== My Simple Python App ===")
+    user_name = input("Enter your name: ")
+    message = greet_user(user_name)
+    print(message)
+
+if __name__ == "__main__":
+    main()
